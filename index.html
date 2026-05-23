@@ -6,180 +6,174 @@
   <title>Detailed Engineering Service Inc.</title>
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
     }
 
-    body {
-      color: #1a1a1a;
-      line-height: 1.6;
-      background-color: #ffffff;
+    body{
+      color:#1a1a1a;
+      line-height:1.6;
+      background:#ffffff;
     }
 
     /* NAVBAR */
-    header {
-      background: #0f172a;
-      padding: 15px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+    header{
+      background:#0f172a;
+      padding:15px 40px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:sticky;
+      top:0;
+      z-index:1000;
     }
 
-    header h1 {
-      color: white;
-      font-size: 20px;
+    header h1{
+      color:white;
+      font-size:20px;
     }
 
-    nav a {
-      color: white;
-      margin-left: 20px;
-      text-decoration: none;
-      font-size: 14px;
-      transition: 0.3s;
+    nav a{
+      color:white;
+      margin-left:20px;
+      text-decoration:none;
+      font-size:14px;
     }
 
-    nav a:hover {
-      opacity: 0.8;
+    nav a:hover{
+      opacity:0.8;
     }
 
-    /* HERO SECTION */
-    .hero {
-      height: 90vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      padding: 20px;
+    /* HERO */
+    .hero{
+      height:90vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+      padding:20px;
 
       background-image:
         linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-        url('bg.jpg');
+        url('weld.webp');
 
-      background-size: cover;
-      background-position: center;
+      background-size:cover;
+      background-position:center;
     }
 
-    .hero h2 {
-      font-size: 52px;
-      margin-bottom: 20px;
+    .hero h2{
+      font-size:52px;
+      margin-bottom:20px;
     }
 
-    .hero p {
-      font-size: 20px;
-      max-width: 800px;
+    .hero p{
+      font-size:18px;
+      max-width:800px;
     }
 
-    /* GENERAL SECTION */
-    .section {
-      padding: 70px 20px;
-      max-width: 1200px;
-      margin: auto;
+    /* SECTION */
+    .section{
+      padding:70px 20px;
+      max-width:1100px;
+      margin:auto;
     }
 
-    .section h3 {
-      text-align: center;
-      font-size: 32px;
-      margin-bottom: 30px;
-      color: #0f172a;
+    .section h3{
+      text-align:center;
+      font-size:32px;
+      margin-bottom:30px;
+      color:#0f172a;
     }
 
     /* ABOUT */
-    .about {
-      background: #f1f5f9;
-      padding: 40px;
-      border-radius: 12px;
+    .about{
+      background:#f1f5f9;
+      padding:40px;
+      border-radius:12px;
     }
 
     /* SERVICES GRID */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 25px;
-      margin-top: 30px;
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:25px;
+      margin-top:30px;
     }
 
-    .card {
-      background: white;
-      border: 1px solid #dbe2ea;
-      border-radius: 12px;
-      padding: 25px;
-      text-decoration: none;
-      color: inherit;
-      transition: 0.3s;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.04);
+    .card{
+      background:#f1f5f9;
+      border:1px solid #e2e8f0;
+      border-radius:12px;
+      padding:25px;
+      text-decoration:none;
+      color:inherit;
+      transition:0.3s;
     }
 
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    .card:hover{
+      transform:translateY(-6px);
+      box-shadow:0 10px 25px rgba(0,0,0,0.1);
     }
 
-    .card h4 {
-      color: #0f172a;
-      margin-bottom: 12px;
-      font-size: 20px;
+    .card h4{
+      color:#0f172a;
+      margin-bottom:12px;
+      font-size:18px;
     }
 
-    .card p {
-      font-size: 15px;
-      color: #374151;
+    .card p{
+      font-size:14px;
+      color:#374151;
     }
 
     /* CONTACT */
-    .contact {
-      background: #0f172a;
-      color: white;
-      padding: 50px;
-      border-radius: 12px;
-      text-align: center;
+    .contact{
+      background:#0f172a;
+      color:white;
+      padding:50px;
+      border-radius:12px;
+      text-align:center;
     }
 
-    .contact h3 {
-      color: white;
-      margin-bottom: 20px;
+    .contact h3{
+      color:white;
+      margin-bottom:20px;
     }
 
-    .contact p {
-      margin-bottom: 10px;
-      font-size: 17px;
+    .contact p{
+      margin-bottom:10px;
     }
 
     /* FOOTER */
-    footer {
-      background: #0f172a;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 50px;
-      font-size: 14px;
+    footer{
+      background:#0f172a;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:50px;
+      font-size:14px;
     }
 
-    /* MOBILE */
-    @media (max-width: 768px) {
+    /* RESPONSIVE */
+    @media (max-width: 900px){
+      .grid{
+        grid-template-columns:repeat(2, 1fr);
+      }
+    }
 
-      header {
-        flex-direction: column;
-        text-align: center;
+    @media (max-width: 600px){
+      .grid{
+        grid-template-columns:1fr;
       }
 
-      nav {
-        margin-top: 10px;
-      }
-
-      .hero h2 {
-        font-size: 36px;
-      }
-
-      .hero p {
-        font-size: 17px;
+      .hero h2{
+        font-size:34px;
       }
     }
 
@@ -188,130 +182,92 @@
 
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <h1>Detailed Engineering Service Inc.</h1>
+<header>
+  <h1>Detailed Engineering Service Inc.</h1>
 
-    <nav>
-      <a href="#about">About Us</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact Us</a>
-    </nav>
-  </header>
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+</header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h2>Engineering Excellence in Welding & Metallurgy</h2>
+<section class="hero">
+  <h2>Engineering Excellence in Welding & Metallurgy</h2>
+  <p>
+    Welding engineering, structural integrity, pressure systems,
+    and industrial compliance consulting across Canada.
+  </p>
+</section>
 
+<section id="about" class="section">
+  <div class="about">
+    <h3>About Us</h3>
     <p>
-      Specialized consulting in welding engineering, structural integrity,
-      metallurgical analysis, pressure equipment compliance, and industrial engineering services across Canada.
+      Detailed Engineering Service Inc. provides specialized engineering consulting
+      in welding, metallurgy, pressure systems, structural engineering, and industrial compliance.
+      We deliver practical, safe, and code-compliant engineering solutions for complex industrial projects.
     </p>
-  </section>
+  </div>
+</section>
 
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <div class="about">
+<section id="services" class="section">
 
-      <h3>About Us</h3>
+  <h3>Our Services</h3>
 
-      <p>
-Detailed Engineering Services Inc. provides specialized welding, metallurgical, and industrial equipment engineering support to oil & gas industries, fabricators, manufacturers, inspection organizations, and industrial asset owners. We deliver practical, reliable, and code-compliant engineering solutions tailored to operational, technical, and regulatory requirements.
-      </p>
+  <div class="grid">
 
-      <br>
+    <a class="card" href="pressure.html">
+      <h4>Pressure Welding Engineering</h4>
+      <p>WPS/PQR development and ASME Section IX compliance support.</p>
+    </a>
 
-      <p>
-Our expertise includes pressure welding engineering, in-service welding support, structural welding engineering, CWB certification support, repair welding engineering, fracture mechanisms and failure analysis, crane and elevating device engineering support, Transport Canada highway and portable tank engineering, metallurgy, material selection consulting, and quality and compliance support. Our focus is to help clients improve safety, reliability, integrity, and long-term operational performance.
+    <a class="card" href="inservice.html">
+      <h4>In-Service Welding</h4>
+      <p>Live pipeline welding, hot tapping, and repair engineering.</p>
+    </a>
 
-      </p>
+    <a class="card" href="structural.html">
+      <h4>Structural Welding</h4>
+      <p>CWB and AWS structural welding certification support.</p>
+    </a>
 
-    </div>
-  </section>
+    <a class="card" href="crane.html">
+      <h4>Crane & Lifting Systems</h4>
+      <p>Inspection engineering and structural evaluation services.</p>
+    </a>
 
-  <!-- SERVICES -->
-  <section id="services" class="section">
+    <a class="card" href="transport.html">
+      <h4>Transport Canada Tanks</h4>
+      <p>Tank design, repair procedures, and regulatory compliance.</p>
+    </a>
 
-    <h3>Our Services</h3>
+    <a class="card" href="other.html">
+      <h4>Other Engineering Services</h4>
+      <p>Metallurgy, failure analysis, ISO systems, and custom engineering.</p>
+    </a>
 
-    <div class="grid">
+  </div>
 
-      <a class="card" href="pressure.html">
-        <h4>Pressure Welding Engineering</h4>
-        <p>
-          WPS/PQR development, pressure systems welding procedures,
-          qualification support, and regulatory compliance services.
-        </p>
-      </a>
+</section>
 
-      <a class="card" href="inservice.html">
-        <h4>In-Service Welding Engineering</h4>
-        <p>
-          Engineering support for hot tapping,
-          live pipeline welding, repair procedures,
-          and in-service welding qualification.
-        </p>
-      </a>
+<section id="contact" class="section">
 
-      <a class="card" href="structural.html">
-        <h4>Structural Welding Engineering</h4>
-        <p>
-          CWB certification support,
-          AWS/CSA structural welding engineering,
-          and fabrication compliance services.
-        </p>
-      </a>
+  <div class="contact">
 
-      <a class="card" href="crane.html">
-        <h4>Crane & Elevating Device Engineering</h4>
-        <p>
-          Structural assessments, inspection engineering support,
-          repair procedures, and lifting equipment certification.
-        </p>
-      </a>
+    <h3>Contact Us</h3>
 
-      <a class="card" href="transport.html">
-        <h4>Transport Canada Tank Engineering</h4>
-        <p>
-          Highway and portable tank engineering support,
-          repair procedures, and CSA B620 compliance services.
-        </p>
-      </a>
+    <p>Email: info@detailedengineering-inc.com</p>
+    <p>Phone: +1 (204) XXX-XXXX</p>
+    <p>Winnipeg, Manitoba, Canada</p>
 
-      <a class="card" href="other.html">
-        <h4>Other Engineering Services</h4>
-        <p>
-          Failure analysis, metallurgy consulting,
-          ISO 3834 support, ASME quality systems,
-          and custom engineering solutions.
-        </p>
-      </a>
+  </div>
 
-    </div>
+</section>
 
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section">
-
-    <div class="contact">
-
-      <h3>Contact Us</h3>
-
-      <p>Email: info@detailedengineering-inc.com</p>
-
-      <p>Phone: +1 (204) 891-2631</p>
-
-      <p>Winnipeg, Manitoba, Canada</p>
-
-    </div>
-
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    © 2026 Detailed Engineering Service Inc. All rights reserved.
-  </footer>
+<footer>
+  © 2026 Detailed Engineering Service Inc. All rights reserved.
+</footer>
 
 </body>
 </html>
