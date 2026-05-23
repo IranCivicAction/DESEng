@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pressure Welding Engineering Support</title>
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="pressure.html">Pressure Welding</a>
+  <a href="inservice.html">In-Service Welding</a>
+  <a href="structural.html">Structural Welding</a>
+  <a href="crane.html">Crane Systems</a>
+  <a href="tank.html">Transport Canada Tanks</a>
+  <a href="other.html">Other Services</a>
+</nav>
+
+<h1>Pressure Welding Engineering Support</h1>
+
+<p>
+Our Pressure Welding Engineering Support services provide comprehensive technical guidance for the development, qualification, review, and implementation of welding procedures used in pressure-retaining systems and critical fabrication applications. We support clients in preparing Welding Procedure Specifications (WPS), Procedure Qualification Records (PQR), and Welder Performance Qualifications (WPQ) in accordance with recognized industry codes and standards, including ASME Section IX, CSA Z662, API 1104, ISO 15614-1, and other applicable regulatory requirements.
+Our services include complete document development, qualification planning, test program preparation, welding procedure execution oversight, and witnessing of destructive and non-destructive testing activities. We also assist with submission packages and technical coordination with provincial regulatory and authorization bodies such as ITSM, ABSA, and TSASK, helping clients achieve compliance, certification, and reliable welding performance for pressure piping, pipelines, vessels, and related engineered systems.
+With more than 20 years of experience in welding procedure development and qualification across diverse industrial sectors, we provide clients with practical engineering solutions designed to optimize qualification efficiency and long-term operational value. Our expertise allows us to strategically develop welding procedures that achieve the broadest practical qualification ranges while reducing unnecessary testing, rework, cost, and schedule impacts—helping clients maintain compliance, improve productivity, and execute projects with confidence.
+
+</p>
+
+<a href="index.html">Back to Home</a>
+
+</body>
+</html>
