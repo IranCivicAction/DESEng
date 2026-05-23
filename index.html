@@ -32,9 +32,21 @@
       z-index:1000;
     }
 
-    header h1{
+    .logo-area{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .logo-area img{
+      height:42px;
+      width:auto;
+      border-radius:6px;
+    }
+
+    .logo-area h1{
       color:white;
-      font-size:20px;
+      font-size:18px;
     }
 
     nav a{
@@ -183,13 +195,21 @@
 <body>
 
 <header>
-  <h1>Detailed Engineering Service Inc.</h1>
+
+  <div class="logo-area">
+
+    <img src="logo.png" alt="Company Logo">
+
+    <h1>Detailed Engineering Service Inc.</h1>
+
+  </div>
 
   <nav>
     <a href="#about">About Us</a>
     <a href="#services">Services</a>
     <a href="#contact">Contact Us</a>
   </nav>
+
 </header>
 
 <section class="hero">
@@ -206,7 +226,6 @@
     <p>
       Detailed Engineering Service Inc. provides specialized engineering consulting
       in welding, metallurgy, pressure systems, structural engineering, and industrial compliance.
-      We deliver practical, safe, and code-compliant engineering solutions for complex industrial projects.
     </p>
   </div>
 </section>
