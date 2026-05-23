@@ -1,39 +1,254 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Structural Welding Engineering Support</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f8fafc;
+      color:#1a1a1a;
+      line-height:1.8;
+    }
+
+    /* NAVBAR */
+
+    header{
+      background:#0f172a;
+      padding:15px 40px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    header h1{
+      color:white;
+      font-size:20px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      font-size:14px;
+    }
+
+    nav a:hover{
+      opacity:0.8;
+    }
+
+    /* HERO */
+
+    .hero{
+      height:45vh;
+
+      background-image:
+      linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+      url('weld.webp');
+
+      background-size:cover;
+      background-position:center;
+
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    .hero h2{
+      font-size:42px;
+      max-width:900px;
+    }
+
+    /* CONTENT */
+
+    .content{
+      max-width:1100px;
+      margin:auto;
+      padding:60px 20px;
+    }
+
+    .content-box{
+      background:white;
+      padding:40px;
+      border-radius:12px;
+      box-shadow:0 5px 20px rgba(0,0,0,0.06);
+    }
+
+    .content p{
+      margin-bottom:22px;
+      font-size:16px;
+      color:#374151;
+    }
+
+    .content ul{
+      margin-left:20px;
+      margin-bottom:25px;
+      color:#374151;
+    }
+
+    .content li{
+      margin-bottom:12px;
+    }
+
+    /* CONTACT */
+
+    .contact{
+      background:#0f172a;
+      color:white;
+      padding:45px;
+      border-radius:12px;
+      margin-top:40px;
+      text-align:center;
+    }
+
+    .contact h3{
+      margin-bottom:15px;
+      font-size:28px;
+    }
+
+    .contact p{
+      margin-bottom:10px;
+    }
+
+    /* FOOTER */
+
+    footer{
+      background:#0f172a;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:50px;
+      font-size:14px;
+    }
+
+    /* MOBILE */
+
+    @media(max-width:768px){
+
+      header{
+        flex-direction:column;
+        text-align:center;
+      }
+
+      nav{
+        margin-top:10px;
+      }
+
+      .hero h2{
+        font-size:32px;
+      }
+
+    }
+
+  </style>
 </head>
 
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="pressure.html">Pressure Welding</a>
-  <a href="inservice.html">In-Service Welding</a>
-  <a href="structural.html">Structural Welding</a>
-  <a href="crane.html">Crane Systems</a>
-  <a href="tank.html">Transport Canada Tanks</a>
-  <a href="other.html">Other Services</a>
-</nav>
+<header>
 
-<h1>Structural Welding Engineering Support</h1>
+  <h1>Detailed Engineering Service Inc.</h1>
 
-<p>
-Structural welding in Canada is governed by strict certification and fabrication requirements in accordance with CSA W47.1 and CSA W59 for steel structures, and CSA W47.2 and CSA W59.2 for aluminum structures. In addition, some industries in Canada and international projects may utilize the AWS structural welding code series, such as AWS D1.1, AWS D1.2, AWS D1.3, AWS D1.5, and AWS D1.8, for structural welding applications. Our CWB-approved and AWS Certified (CWEng.) senior welding engineer provides high-quality engineering support for structural welding projects across a wide range of industrial applications.
-Our international structural welding services include:
-•	CWB certification support and retained engineering services for Division 2 fabrication shops 
-•	Development of Welding Procedure Specifications (WPS) and Welding Procedure Data Sheets (WPDS) for all CWB divisions, as well as AWS-based applications 
-•	Design review, specification assessment, and technical support for structural welding projects 
-Do You Need CWB Certification?
-If you fabricate steel structures in or for Canada, a specific CWB division certification may be required depending on project scope, design requirements, and client specifications. In many cases, Canadian codes and standards establish mandatory certification levels for fabrication activities. For example:
-•	CSA S6 – Canadian Highway Bridge Design Code: Requires Division 1 or 2 certification 
-•	CSA S16 – Design of Steel Structures: Requires Division 1 or 2 certification; Division 3 fabricators may perform limited work under the responsibility of a Division 1 or 2 certified company 
-•	CSA S157 – Strength Design in Aluminum: Requires Division 1 or 2 certification; Division 3 may perform defined scopes under the oversight of a certified organization 
-Additional standards such as CSA A660, CSA A23.3, and CSA A136 also include mandatory provisions requiring fabricators and erectors to be CWB certified. Furthermore, several industry safety and product codes reference CWB certification for applications including cranes, elevators and escalators, hoists and manlifts, antenna structures, wind turbine towers, mobile structures, and reinforcing steel.
+  <nav>
+    <a href="index.html">Home</a>
+  </nav>
 
-</p>
+</header>
 
-<a href="index.html">Back to Home</a>
+<section class="hero">
+
+  <h2>Structural Welding Engineering Support</h2>
+
+</section>
+
+<section class="content">
+
+  <div class="content-box">
+
+    <p>
+      Structural welding in Canada is governed by strict certification and fabrication requirements in accordance with CSA W47.1 and CSA W59 for steel structures, and CSA W47.2 and CSA W59.2 for aluminum structures.
+    </p>
+
+    <p>
+      In addition, some industries in Canada and international projects may utilize the AWS structural welding code series, including AWS D1.1, AWS D1.2, AWS D1.3, AWS D1.5, and AWS D1.8 for structural welding applications.
+    </p>
+
+    <p>
+      Our CWB-approved and AWS Certified (CWEng.) senior welding engineer provides high-quality engineering support for structural welding projects across a wide range of industrial applications.
+    </p>
+
+    <p>
+      Our structural welding engineering services include:
+    </p>
+
+    <ul>
+      <li>CWB certification support and retained engineering services for Division 2 fabrication shops</li>
+
+      <li>Development of Welding Procedure Specifications (WPS) and Welding Procedure Data Sheets (WPDS)</li>
+
+      <li>Engineering support for CSA and AWS-based structural welding applications</li>
+
+      <li>Design review, specification assessment, and technical consultation</li>
+
+      <li>Fabrication compliance and certification support</li>
+    </ul>
+
+    <p>
+      If you fabricate steel or aluminum structures in or for Canada, specific CWB certification requirements may apply depending on project scope, client specifications, and governing standards.
+    </p>
+
+    <p>
+      Several Canadian standards including CSA S6, CSA S16, CSA S157, CSA A660, CSA A23.3, and CSA A136 contain mandatory provisions related to certified fabrication activities.
+    </p>
+
+    <p>
+      Additional industries requiring CWB-certified fabrication may include:
+    </p>
+
+    <ul>
+      <li>Bridge and highway infrastructure</li>
+      <li>Industrial steel structures</li>
+      <li>Wind turbine towers</li>
+      <li>Cranes and lifting equipment</li>
+      <li>Elevators and escalators</li>
+      <li>Mobile structures and reinforcing steel systems</li>
+    </ul>
+
+    <p>
+      We provide practical engineering guidance focused on certification readiness, fabrication compliance, structural integrity, and long-term project success.
+    </p>
+
+  </div>
+
+  <div class="contact">
+
+    <h3>Contact Us</h3>
+
+    <p>Email: info@detailedengineering-inc.com</p>
+
+    <p>Phone: +1 (204) XXX-XXXX</p>
+
+    <p>Winnipeg, Manitoba, Canada</p>
+
+  </div>
+
+</section>
+
+<footer>
+  © 2026 Detailed Engineering Service Inc. All rights reserved.
+</footer>
 
 </body>
 </html>
