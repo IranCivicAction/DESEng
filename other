@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Other Engineering Services</title>
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="pressure.html">Pressure Welding</a>
+  <a href="inservice.html">In-Service Welding</a>
+  <a href="structural.html">Structural Welding</a>
+  <a href="crane.html">Crane Systems</a>
+  <a href="tank.html">Transport Canada Tanks</a>
+  <a href="other.html">Other Services</a>
+</nav>
+
+<h1>Other Engineering Services</h1>
+
+<p>
+In addition to our specialized welding, structural, pressure equipment, and transportation engineering services, we provide a broad range of technical consulting and compliance support tailored to the needs of industrial manufacturers, fabricators, inspection organizations, and equipment owners.
+Our additional engineering services include:
+•	ASME Quality Control Manual Development and Compliance Support in accordance with CSA B51 and provincial regulatory authorities such as ITSM, TSASK, ABSA, and other applicable jurisdictions 
+•	Industrial Failure Analysis, Metallurgical Assessment, and Material Selection Consulting to support root cause investigations, performance evaluation, and optimized material selection for demanding service conditions 
+•	ISO 3834 Implementation and Compliance Support for welding quality management systems, process control, and certification readiness 
+•	Custom Equipment Fabrication and Modification Design including engineering support for specialized industrial equipment, structural modifications, and application-specific design solutions 
+With practical experience across multiple industrial sectors, we provide engineering solutions focused on safety, compliance, reliability, and operational efficiency—helping clients address unique technical challenges with confidence.
+</p>
+
+<a href="index.html">Back to Home</a>
+
+</body>
+</html>
