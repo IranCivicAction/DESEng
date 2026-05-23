@@ -18,17 +18,20 @@
       line-height: 1.6;
     }
 
-    /* HEADER */
+    /* NAVBAR */
     header {
       background: #0f172a;
-      color: white;
       padding: 15px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
     header h1 {
+      color: white;
       font-size: 18px;
     }
 
@@ -49,7 +52,6 @@
       text-align: center;
       color: white;
 
-      /* YOUR IMAGE (ROOT FOLDER) */
       background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
                         url('weld.webp');
 
@@ -64,24 +66,25 @@
 
     .hero p {
       font-size: 18px;
-      max-width: 700px;
+      max-width: 750px;
     }
 
-    /* SECTIONS */
+    /* SECTION */
     .section {
       padding: 70px 20px;
-      max-width: 1100px;
+      max-width: 1200px;
       margin: auto;
     }
 
     .section h3 {
       font-size: 28px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       color: #0f172a;
+      text-align: center;
     }
 
-    /* SERVICES */
-    .services {
+    /* SERVICE GRID */
+    .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
@@ -89,9 +92,17 @@
 
     .card {
       background: #f8fafc;
-      padding: 20px;
-      border-radius: 10px;
       border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 20px;
+      transition: 0.3s;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     }
 
     .card h4 {
@@ -102,25 +113,18 @@
     /* ABOUT */
     .about {
       background: #f1f5f9;
-      padding: 30px;
-      border-radius: 10px;
-    }
-
-    /* CONTACT */
-    .contact {
-      background: #0f172a;
-      color: white;
       padding: 40px;
-      border-radius: 10px;
-      text-align: center;
+      border-radius: 12px;
+      margin-top: 40px;
     }
 
+    /* FOOTER */
     footer {
       text-align: center;
       padding: 20px;
-      font-size: 14px;
       background: #0f172a;
       color: white;
+      margin-top: 50px;
     }
   </style>
 </head>
@@ -129,63 +133,75 @@
 
 <header>
   <h1>Detailed Engineering Service Inc.</h1>
+
   <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="pressure.html">Pressure</a>
+    <a href="inservice.html">In-Service</a>
+    <a href="structural.html">Structural</a>
+    <a href="crane.html">Crane</a>
+    <a href="transport.html">Transport</a>
+    <a href="other.html">Other</a>
   </nav>
 </header>
 
 <section class="hero">
-  <h2>Welding & Metallurgical Engineering Consulting</h2>
+  <h2>Engineering Excellence in Welding & Metallurgy</h2>
   <p>
-    Professional consulting in welding, metallurgy, failure analysis, and industrial inspection services across Canada.
+    Specialized consulting in welding engineering, structural integrity,
+    failure analysis, and industrial compliance services across Canada.
   </p>
 </section>
 
-<section id="about" class="section about">
-  <h3>About Us</h3>
-  <p>
-    Detailed Engineering Service Inc. provides expert welding engineering,
-    metallurgical analysis, and failure investigation services for industrial clients.
-  </p>
-</section>
+<section class="section">
+  <h3>Our Engineering Services</h3>
 
-<section id="services" class="section">
-  <h3>Our Services</h3>
+  <div class="grid">
 
-  <div class="services">
-    <div class="card">
-      <h4>Welding Engineering</h4>
-      <p>WPS/PQR development, welding procedure qualification, and optimization.</p>
-    </div>
+    <a class="card" href="pressure.html">
+      <h4>Pressure Welding Engineering</h4>
+      <p>WPS/PQR development, ASME Section IX compliance, and pressure systems engineering support.</p>
+    </a>
 
-    <div class="card">
-      <h4>Metallurgical Analysis</h4>
-      <p>Material testing, microstructure evaluation, and lab-based analysis.</p>
-    </div>
+    <a class="card" href="inservice.html">
+      <h4>In-Service Welding</h4>
+      <p>Engineering support for live pipeline welding, hot tapping, and repair operations.</p>
+    </a>
 
-    <div class="card">
-      <h4>Failure Investigation</h4>
-      <p>Root cause analysis for industrial component failures.</p>
-    </div>
+    <a class="card" href="structural.html">
+      <h4>Structural Welding</h4>
+      <p>CWB and AWS-based structural welding engineering and certification support.</p>
+    </a>
 
-    <div class="card">
-      <h4>Inspection Support</h4>
-      <p>NDT planning, QA/QC support, and compliance reviews.</p>
-    </div>
+    <a class="card" href="crane.html">
+      <h4>Crane & Lifting Systems</h4>
+      <p>Inspection support, structural evaluation, and engineering certification services.</p>
+    </a>
+
+    <a class="card" href="transport.html">
+      <h4>Transport Canada Tanks</h4>
+      <p>Design, repair, and regulatory compliance for highway and portable tanks.</p>
+    </a>
+
+    <a class="card" href="other.html">
+      <h4>Other Engineering Services</h4>
+      <p>Failure analysis, ISO systems, metallurgical consulting, and custom solutions.</p>
+    </a>
+
+  </div>
+
+  <div class="about">
+    <h3>About Us</h3>
+    <p>
+      Detailed Engineering Service Inc. provides expert engineering consulting in welding,
+      metallurgy, and industrial systems. With extensive experience across multiple industries,
+      we deliver safe, compliant, and efficient engineering solutions tailored to client needs.
+    </p>
   </div>
 </section>
 
-<section id="contact" class="section contact">
-  <h3>Contact Us</h3>
-  <p>Email: info@detailedengineering-inc.com</p>
-  <p>Phone: +1 (204) XXX-XXXX</p>
-  <p>Winnipeg, Manitoba, Canada</p>
-</section>
-
 <footer>
-  © 2026 Detailed Engineering Service Inc.
+  © 2026 Detailed Engineering Service Inc. All rights reserved.
 </footer>
 
 </body>
