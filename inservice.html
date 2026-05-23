@@ -1,30 +1,233 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>In-Service Welding Engineering Support</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f8fafc;
+      color:#1a1a1a;
+      line-height:1.8;
+    }
+
+    /* NAVBAR */
+
+    header{
+      background:#0f172a;
+      padding:15px 40px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    header h1{
+      color:white;
+      font-size:20px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      font-size:14px;
+    }
+
+    nav a:hover{
+      opacity:0.8;
+    }
+
+    /* HERO */
+
+    .hero{
+      height:45vh;
+
+      background-image:
+      linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+      url('weld.webp');
+
+      background-size:cover;
+      background-position:center;
+
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    .hero h2{
+      font-size:42px;
+      max-width:900px;
+    }
+
+    /* CONTENT */
+
+    .content{
+      max-width:1100px;
+      margin:auto;
+      padding:60px 20px;
+    }
+
+    .content-box{
+      background:white;
+      padding:40px;
+      border-radius:12px;
+      box-shadow:0 5px 20px rgba(0,0,0,0.06);
+    }
+
+    .content p{
+      margin-bottom:22px;
+      font-size:16px;
+      color:#374151;
+    }
+
+    .content ul{
+      margin-left:20px;
+      margin-bottom:25px;
+      color:#374151;
+    }
+
+    .content li{
+      margin-bottom:10px;
+    }
+
+    /* CONTACT */
+
+    .contact{
+      background:#0f172a;
+      color:white;
+      padding:45px;
+      border-radius:12px;
+      margin-top:40px;
+      text-align:center;
+    }
+
+    .contact h3{
+      margin-bottom:15px;
+      font-size:28px;
+    }
+
+    .contact p{
+      margin-bottom:10px;
+    }
+
+    /* FOOTER */
+
+    footer{
+      background:#0f172a;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:50px;
+      font-size:14px;
+    }
+
+    /* MOBILE */
+
+    @media(max-width:768px){
+
+      header{
+        flex-direction:column;
+        text-align:center;
+      }
+
+      nav{
+        margin-top:10px;
+      }
+
+      .hero h2{
+        font-size:32px;
+      }
+
+    }
+
+  </style>
 </head>
 
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="pressure.html">Pressure Welding</a>
-  <a href="inservice.html">In-Service Welding</a>
-  <a href="structural.html">Structural Welding</a>
-  <a href="crane.html">Crane Systems</a>
-  <a href="tank.html">Transport Canada Tanks</a>
-  <a href="other.html">Other Services</a>
-</nav>
+<header>
 
-<h1>In-Service Welding Engineering Support</h1>
+  <h1>Detailed Engineering Service Inc.</h1>
 
-<p>
-In-service welding on live pipelines and piping systems is a highly cost-effective solution for maintenance, repair, modification, and hot tapping operations. However, it is also one of the most technically demanding welding applications in the oil and gas industry, requiring careful engineering assessment, strict safety controls, and code-compliant execution. Key technical challenges in in-service welding include the risk of burn-through or blowout when welding on thin-wall piping, Hydrogen-Induced Cracking (HIC) resulting from accelerated cooling rates, and site-specific operational restrictions that may impact access, welding execution, safety controls, and overall project planning.
-At Detailed Engineering Services Inc., we provide specialized In-Service Welding Engineering Support for critical applications such as welded sleeves, branch connections, hot tap attachments, and direct deposit (build-up) repairs on live pipelines and pressure piping systems. With extensive industry experience, we support clients through engineering assessment, welding feasibility review, risk evaluation, procedure development, and qualification activities in accordance with CSA Z662, API 1104 Annex B, ASME PCC-2, and project-specific requirements.
-Our services include planning, developing, and qualifying new or existing welding procedures for in-service applications, as well as Welder Qualification and Re-Qualification (WPQ) for specialized live-system welding operations. We also provide technical review of third-party welding procedures to ensure compliance, safety, and suitability for field execution—helping organizations reduce downtime, maintain system integrity, and execute repairs with confidence.
-</p>
+  <nav>
+    <a href="index.html">Home</a>
+  </nav>
 
-<a href="index.html">Back to Home</a>
+</header>
+
+<section class="hero">
+
+  <h2>In-Service Welding Engineering Support</h2>
+
+</section>
+
+<section class="content">
+
+  <div class="content-box">
+
+    <p>
+      In-service welding on live pipelines and piping systems is a highly cost-effective solution for maintenance, repair, modification, and hot tapping operations. However, it is also one of the most technically demanding welding applications in the oil and gas industry, requiring careful engineering assessment, strict safety controls, and code-compliant execution.
+    </p>
+
+    <p>
+      Key technical challenges in in-service welding include the risk of burn-through or blowout when welding on thin-wall piping, Hydrogen-Induced Cracking (HIC) resulting from accelerated cooling rates, and site-specific operational restrictions that may impact access, welding execution, safety controls, and overall project planning.
+    </p>
+
+    <p>
+      At Detailed Engineering Services Inc., we provide specialized In-Service Welding Engineering Support for critical applications such as:
+    </p>
+
+    <ul>
+      <li>Welded sleeves</li>
+      <li>Branch connections</li>
+      <li>Hot tap attachments</li>
+      <li>Direct deposit (build-up) repairs</li>
+      <li>Live pipelines and pressure piping systems</li>
+    </ul>
+
+    <p>
+      With extensive industry experience, we support clients through engineering assessment, welding feasibility review, risk evaluation, procedure development, and qualification activities in accordance with CSA Z662, API 1104 Annex B, ASME PCC-2, and project-specific requirements.
+    </p>
+
+    <p>
+      Our services include planning, developing, and qualifying new or existing welding procedures for in-service applications, as well as Welder Qualification and Re-Qualification (WPQ) for specialized live-system welding operations.
+    </p>
+
+    <p>
+      We also provide technical review of third-party welding procedures to ensure compliance, safety, and suitability for field execution—helping organizations reduce downtime, maintain system integrity, and execute repairs with confidence.
+    </p>
+
+  </div>
+
+  <div class="contact">
+
+    <h3>Contact Us</h3>
+
+    <p>Email: info@detailedengineering-inc.com</p>
+
+    <p>Phone: +1 (204) XXX-XXXX</p>
+
+    <p>Winnipeg, Manitoba, Canada</p>
+
+  </div>
+
+</section>
+
+<footer>
+  © 2026 Detailed Engineering Service Inc. All rights reserved.
+</footer>
 
 </body>
 </html>
