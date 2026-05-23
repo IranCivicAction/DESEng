@@ -37,7 +37,7 @@
 
     nav a {
       color: white;
-      margin-left: 15px;
+      margin-left: 20px;
       text-decoration: none;
       font-size: 14px;
     }
@@ -72,18 +72,18 @@
     /* SECTION */
     .section {
       padding: 70px 20px;
-      max-width: 1200px;
+      max-width: 1100px;
       margin: auto;
     }
 
     .section h3 {
       font-size: 28px;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       color: #0f172a;
       text-align: center;
     }
 
-    /* SERVICE GRID */
+    /* SERVICES GRID */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -96,8 +96,6 @@
       border-radius: 12px;
       padding: 20px;
       transition: 0.3s;
-      text-decoration: none;
-      color: inherit;
     }
 
     .card:hover {
@@ -118,7 +116,21 @@
       margin-top: 40px;
     }
 
-    /* FOOTER */
+    /* CONTACT */
+    .contact {
+      background: #0f172a;
+      color: white;
+      padding: 50px;
+      border-radius: 12px;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .contact h3 {
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
@@ -135,13 +147,9 @@
   <h1>Detailed Engineering Service Inc.</h1>
 
   <nav>
-    <a href="index.html">Home</a>
-    <a href="pressure.html">Pressure</a>
-    <a href="inservice.html">In-Service</a>
-    <a href="structural.html">Structural</a>
-    <a href="crane.html">Crane</a>
-    <a href="transport.html">Transport</a>
-    <a href="other.html">Other</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact Us</a>
   </nav>
 </header>
 
@@ -153,51 +161,58 @@
   </p>
 </section>
 
-<section class="section">
-  <h3>Our Engineering Services</h3>
+<section id="about" class="section about">
+  <h3>About Us</h3>
+  <p>
+    Detailed Engineering Service Inc. provides expert engineering consulting in welding,
+    metallurgy, and industrial systems. With extensive experience across multiple industries,
+    we deliver safe, compliant, and efficient engineering solutions tailored to client needs.
+  </p>
+</section>
+
+<section id="services" class="section">
+  <h3>Our Services</h3>
 
   <div class="grid">
 
-    <a class="card" href="pressure.html">
+    <div class="card">
       <h4>Pressure Welding Engineering</h4>
       <p>WPS/PQR development, ASME Section IX compliance, and pressure systems engineering support.</p>
-    </a>
+    </div>
 
-    <a class="card" href="inservice.html">
+    <div class="card">
       <h4>In-Service Welding</h4>
-      <p>Engineering support for live pipeline welding, hot tapping, and repair operations.</p>
-    </a>
+      <p>Live pipeline welding, hot tapping, and repair engineering support.</p>
+    </div>
 
-    <a class="card" href="structural.html">
+    <div class="card">
       <h4>Structural Welding</h4>
-      <p>CWB and AWS-based structural welding engineering and certification support.</p>
-    </a>
+      <p>CWB and AWS structural welding engineering and certification support.</p>
+    </div>
 
-    <a class="card" href="crane.html">
+    <div class="card">
       <h4>Crane & Lifting Systems</h4>
-      <p>Inspection support, structural evaluation, and engineering certification services.</p>
-    </a>
+      <p>Inspection support, structural evaluation, and certification services.</p>
+    </div>
 
-    <a class="card" href="transport.html">
+    <div class="card">
       <h4>Transport Canada Tanks</h4>
       <p>Design, repair, and regulatory compliance for highway and portable tanks.</p>
-    </a>
+    </div>
 
-    <a class="card" href="other.html">
+    <div class="card">
       <h4>Other Engineering Services</h4>
       <p>Failure analysis, ISO systems, metallurgical consulting, and custom solutions.</p>
-    </a>
+    </div>
 
   </div>
+</section>
 
-  <div class="about">
-    <h3>About Us</h3>
-    <p>
-      Detailed Engineering Service Inc. provides expert engineering consulting in welding,
-      metallurgy, and industrial systems. With extensive experience across multiple industries,
-      we deliver safe, compliant, and efficient engineering solutions tailored to client needs.
-    </p>
-  </div>
+<section id="contact" class="section contact">
+  <h3>Contact Us</h3>
+  <p>Email: info@detailedengineering-inc.com</p>
+  <p>Phone: +1 (204) XXX-XXXX</p>
+  <p>Winnipeg, Manitoba, Canada</p>
 </section>
 
 <footer>
