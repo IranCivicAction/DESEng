@@ -35,13 +35,12 @@
     .logo-area{
       display:flex;
       align-items:center;
-      gap:12px;
+      gap:10px;
     }
 
     .logo-area img{
-      height:4px;
+      height:17px;
       width:auto;
-      border-radius:6px;
     }
 
     .logo-area h1{
@@ -180,6 +179,12 @@
     }
 
     @media (max-width: 600px){
+
+      header{
+        flex-direction:column;
+        gap:15px;
+      }
+
       .grid{
         grid-template-columns:1fr;
       }
@@ -187,6 +192,7 @@
       .hero h2{
         font-size:34px;
       }
+
     }
 
   </style>
@@ -196,7 +202,7 @@
 
 <header>
 
-  <div class="-area">
+  <div class="logo-area">
 
     <img src="logo2.png" alt="Company Logo">
 
@@ -213,21 +219,30 @@
 </header>
 
 <section class="hero">
+
   <h2>Engineering Excellence in Welding & Metallurgy</h2>
+
   <p>
     Welding engineering, structural integrity, pressure systems,
     and industrial compliance consulting across Canada.
   </p>
+
 </section>
 
 <section id="about" class="section">
+
   <div class="about">
+
     <h3>About Us</h3>
+
     <p>
       Detailed Engineering Service Inc. provides specialized engineering consulting
       in welding, metallurgy, pressure systems, structural engineering, and industrial compliance.
+      We deliver practical, safe, and code-compliant engineering solutions for complex industrial projects.
     </p>
+
   </div>
+
 </section>
 
 <section id="services" class="section">
